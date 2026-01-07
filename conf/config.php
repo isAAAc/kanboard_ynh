@@ -203,7 +203,7 @@ define('LDAP_GROUP_ATTRIBUTE_NAME', 'cn');
 define('LDAP_GROUP_SYNC', true);
 
 // Enable/disable the reverse proxy authentication
-define('REVERSE_PROXY_AUTH', false);
+define('REVERSE_PROXY_AUTH', true);
 
 // Header name to use for the username
 define('REVERSE_PROXY_USER_HEADER', 'REMOTE_USER');
@@ -291,7 +291,7 @@ define('DASHBOARD_MAX_PROJECTS', 10);
 define('TRUSTED_PROXY_HEADERS', '');
 
 // Comma separated list of trusted proxy IP networks (CIDR), for example: "192.168.0.0/16,10.0.0.0/8,::1/128"
-define('TRUSTED_PROXY_NETWORKS', '');
+define('TRUSTED_PROXY_NETWORKS', '127.0.0.1');
 
 // Allow private network access when fetching metadata for external links
 define('EXTERNAL_LINK_ALLOW_PRIVATE_NETWORKS', false);
