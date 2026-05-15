@@ -5,7 +5,7 @@ name = "Kanboard"
 description.en = "Kanban project management software"
 description.fr = "Logiciel de gestion de projet Kanban"
 
-version = "1.2.52~ynh1"
+version = "1.2.52~ynh2"
 
 maintainers = []
 
@@ -18,7 +18,7 @@ code = "https://github.com/kanboard/kanboard"
 fund = "https://kanboard.org/#donations"
 
 [integration]
-yunohost = ">= 12.1.38"
+yunohost = ">= 12.1.39"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -51,7 +51,7 @@ ram.runtime = "50M"
 
         [resources.sources.main]
         url = "https://github.com/kanboard/kanboard/archive/refs/tags/v1.2.52.tar.gz"
-        sha256 = "50afbaaa90685afacfb780a6264ad0701d28ea0f41184dc9b95fef9823c115fa"
+        sha256 = "f5bc4d00489ae9b6e98609251a243b9b32ca9bdf29340bde1014ec26ad575660"
         autoupdate.strategy = "latest_github_release"
 
     [resources.system_user]
@@ -70,7 +70,7 @@ ram.runtime = "50M"
     ics.allowed = "visitors"
 
     [resources.apt]
-    packages = "mariadb-server, php8.4-opcache, php8.4-curl, php8.4-gd, php8.4-zip, php8.4-xml, php8.4-mbstring, php8.4-mysql, php8.4-ldap"
+    packages = "mariadb-server, php8.5-opcache, php8.5-curl, php8.5-gd, php8.5-zip, php8.5-xml, php8.5-mbstring, php8.5-mysql, php8.5-ldap"
 
     [resources.database]
     type = "mysql"
